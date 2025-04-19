@@ -35,7 +35,7 @@ export default function AddEvent() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://ems-backend-9cfa.onrender.com/createEvent", formData)
+      .post("https://ems-backend-9cfa.onrender.com/events", formData)
       .then((response) => {
         console.log("Event posted successfully:", response.data);
       })
